@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="ic.svg">
+    <title>SWC-task2</title>
+</head>
+<body>
+    <nav class="flex justify-between box-border shadow-[0_2px_24px_0px_rgba(0,0,0,0.06)] py-4 bg-white fixed right-0 left-0 items-center px-12 border border-solid z-10">
+        <div class="flex items-center box-border border-r-4 h-8 pr-14">
+            <img src="ic.svg" alt="" class="pr-3.5">
+            <p class="font-sans font-extrabold text-base text-[16px]">Movies</p>
+        </div>
+
+        <div class="flex items-center box-border border-l-4 h-8 pl-4">
+            <img src="Icon.svg" alt="" class="pr-3.5">
+            <input class="w-2/4" type="text" name="" id="searchbar1" placeholder="Quick search">
+        </div>
+    </nav>
+    <div class="flex flex-col justify-items-end border-r-2 fixed top-16 bottom-0  bg-[#f5f7f9] pt-12 pl-8 text-black font-sans font-medium text-[14px]">
+        <input type="text" name="searchbar" class="border py-2 text-center font-sans placeholder:text-black placeholder:font-medium placeholder:text-sm" id="searchbar2" placeholder="Search Result">
+        <div class="text-left font-600 text-sm pl-8">
+            <a href="#">
+                <p class="my-6 text-sm"> All Teams</p>
+            </a>
+            <a href="#">
+                <p class="my-6 text-sm">Core</p>
+            </a>
+            <a href="#">
+                <p class="my-6 text-sm">Devlopers</p>
+            </a>
+            <a href="#">
+                <p class="my-6 text-sm">Designers</p>
+            </a>
+            <a href="#">
+                <p class="my-6 text-sm">Mentors</p>
+            </a>
+        </div>
+        <button type="button" class="bg-black text-white text-center absolute bottom-10 right-5 left-10 py-2 rounded-lg">+ ADD</button>
+    </div>
+    <main class="pt-28 pl-72 pr-32 pb-12 lg:grid gap-x-16 gap-y-8 grid-cols-3 ">
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
