@@ -3,17 +3,6 @@ const base_url='https://api.themoviedb.org/3';
 const api_url=base_url+'/discover/movie?sort_by=popularity.desc&'+api_key;
 const main=document.querySelector("main");
 const search=document.querySelector("#searchbar1"); 
-search.addEventListener('keyup',cont=>{
-    const term=cont.target.value.toLowerCase();
-    const titles=document.querySelector(".title");
-    titles.forEach(title=>{
-        if(title.textContent.toLowerCase().indexOf(term)!=-1){
-            title.parentElement.style.display="block";
-        }
-        else{
-            title.parentElement.style.display="none";
-        }
-    })
 })
 fetch(api_url).then(res=>res.json())
 .then(data=>{
