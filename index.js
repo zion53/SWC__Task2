@@ -20,7 +20,7 @@ fetch(api_url).then(res=>res.json())
     const movele=data.results;
     movele.forEach(movie=>{
         main.innerHTML+=`<div class="relative moviebox md:my-5 sm:my-4">
-        <img src="https://www.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}" class="w-full">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="w-full">
         <p class="absolute bottom-8 pl-5 pr-3 text-4xl font-sans font-bold  text-white ">${movie.title}</p>
         </div>`
     })
