@@ -3,7 +3,7 @@ const base_url='https://api.themoviedb.org/3';
 const api_url=base_url+'/discover/movie?sort_by=popularity.desc&'+api_key;
 const main=document.querySelector("main");
 const search=document.querySelector("#searchbar1"); 
-})
+
 fetch(api_url).then(res=>res.json())
 .then(data=>{
     const movele=data.results;
