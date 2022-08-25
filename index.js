@@ -20,6 +20,8 @@ fetch(api_url).then(res=>res.json())
     search.addEventListener('keyup',cont=>{
     const term=cont.target.value.toLowerCase();
     console.log(term);
+    const searchurl=base_url+`/search/${term}?`+api_key;
+    console.log(searchurl);
     tit.forEach(tit=>{
         if(tit.lastElementChild.textContent.toLowerCase().indexOf(term)!=-1){
             tit.classList.add("block");
@@ -33,5 +35,3 @@ fetch(api_url).then(res=>res.json())
 
     })
 })
-
-
